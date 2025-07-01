@@ -8,7 +8,7 @@ const movies = {
     genre: "Fantasy, Adventure",
     duration: "1h 45min",
     description: "A live-action reimagining of Disney's classic fairytale about a young princess and seven quirky dwarfs.",
-    poster: "img/snowwhite.jpg",
+    poster: "img/snowwhite2025.webp",
     downloadLink: "#"
   },
   spiderman: {
