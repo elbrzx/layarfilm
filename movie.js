@@ -16,7 +16,7 @@ const movies = {
     genre: "Action, Superhero",
     duration: "2h 10min",
     description: "Peter Parker swings back into action in this epic sequel...",
-    poster: "img/spiderman.jpg",
+    poster: "img/finaldestination2025.webp",
     downloadLink: "#"
   },
   minecraft: {
@@ -24,7 +24,7 @@ const movies = {
     genre: "Animation, Adventure",
     duration: "1h 30min",
     description: "An epic journey through the pixelated world of Minecraft.",
-    poster: "img/minecraft.jpg",
+    poster: "img/minecraft2025.webp",
     downloadLink: "#"
   },
   wicked: {
@@ -32,7 +32,7 @@ const movies = {
     genre: "Musical, Fantasy",
     duration: "2h 5min",
     description: "The untold story of the witches of Oz.",
-    poster: "img/wicked.jpg",
+    poster: "img/sinners2025.webp",
     downloadLink: "#"
   },
   venom: {
@@ -40,7 +40,7 @@ const movies = {
     genre: "Action, Sci-Fi",
     duration: "1h 50min",
     description: "Eddie Brock faces a new threat as Venom returns.",
-    poster: "img/venom.jpg",
+    poster: "img/theamateur2025.webp",
     downloadLink: "#"
   }
 };
