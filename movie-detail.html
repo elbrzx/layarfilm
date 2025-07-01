@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie Detail</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">🎬 Movies Hub</div>
+    <nav>
+      <a href="index.html">Home</a>
+    </nav>
+  </header>
+
+  <main class="movie-detail-container">
+    <section class="movie-detail">
+      <img src="img/snowwhite2025.webp" alt="Snow White" class="detail-poster" />
+      <div class="detail-info">
+        <h1>Snow White (2025)</h1>
+        <p><strong>Genre:</strong> Fantasy, Adventure</p>
+        <p><strong>Duration:</strong> 1h 45min</p>
+        <p><strong>Description:</strong> A live-action reimagining of Disney's classic fairytale about a young princess and seven quirky dwarfs.</p>
+        <a href="#" class="download-btn">⬇️ Download Movie</a>
+      </div>
+    </section>
+
+    <section class="comment-section">
+      <h2>Comments</h2>
+      <form id="comment-form">
+        <input type="text" id="username" placeholder="Your name" required />
+        <textarea id="comment" placeholder="Leave a comment..." required></textarea>
+        <button type="submit">Post</button>
+      </form>
+      <ul id="comment-list"></ul>
+    </section>
+
+    <aside class="sidebar">
+      <h3>Other Movies</h3>
+      <a href="movie-detail.html?id=2"><img src="img/theamateur2025.webp" alt="Spiderman" /></a>
+      <a href="movie-detail.html?id=3"><img src="img/finaldestination2025.webp" alt="Minecraft" /></a>
+      <a href="movie-detail.html?id=4"><img src="img/minecraft2025.webp" alt="Wicked" /></a>
+      <a href="movie-detail.html?id=5"><img src="img/sinners2025.webp" alt="Venom" /></a>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Movies Hub. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Basic comment functionality
+    const form = document.getElementById("comment-form");
+    const list = document.getElementById("comment-list");
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const name = document.getElementById("username").value;
+      const comment = document.getElementById("comment").value;
+
+      const li = document.createElement("li");
+      li.textContent = `${name}: ${comment}`;
+      list.appendChild(li);
+
+      form.reset();
+    });
+  </script>
+</body>
+</html>
